@@ -1,12 +1,11 @@
+# for문은 끝수가 실행되면 종료
+
 n = int(input())
 
 sum = 1
-for i in range(n, 2, -2):
-    sum = n * n-1
 
-if(n==0):
-    print("1")
-else:
-    print(sum)
+for i in range(n, 0, -1):
+    sum = sum * i
 
-# 5 4 3 2 1 :  
+print(sum)
+
